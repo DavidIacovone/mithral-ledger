@@ -1,14 +1,7 @@
-import { SidebarProvider, SidebarTrigger } from "./components/ui/sidebar.tsx";
-import { AppSidebar } from './components/app-sidebar.tsx';
+import Game from '~/components/game.tsx';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout() {
   return (
-      <SidebarProvider>
-        <AppSidebar />
-        <main>
-          <SidebarTrigger />
-          {children}
-        </main>
-      </SidebarProvider>
+      <Game />
   )
 }
